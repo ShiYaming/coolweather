@@ -1,7 +1,6 @@
 package com.test.sym.coolwheather.db;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -19,7 +18,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
             "city_code  text," +
             "province_id    integer)";
     public static final String CREATE_COUNTY = "create table County (" +
-            "in integer primary autoincrement," +
+            "id integer primary key autoincrement," +
             "county_name text," +
             "county_code text,"+
             "city_id    integer )";
